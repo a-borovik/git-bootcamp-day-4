@@ -1,0 +1,19 @@
+# Применить нормализацию ко всем текстовым файлам автоматически
+* text=auto
+
+# Явно указать файлы которые всегда должны быть с LF (Unix-стиль)
+*.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Бинарные файлы — не трогать вообще
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.pdf binary
+*.exe binary
