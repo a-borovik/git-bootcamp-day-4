@@ -26,12 +26,11 @@ class Stats:
     avg_body_length: float
 
 
-def search_notes(query: str, limit: int = 25) -> list[SearchHit]:
-    """Поиск под продакшен: точный scoring, приоритет тегов перед телом.
+def search_notes(query: str, limit: int = 50) -> list[SearchHit]:
+    """Найти заметки, у которых в title/body/tag встречается подстрока query.
 
-    На небольшой выдаче (limit=25) важна релевантность: точное совпадение по
-    тегу — 1.0, начало title — 0.95, подстрока в title — 0.7, тело — 0.4 с
-    бонусом за частоту, но не выше 0.6.
+    Алгоритм простой — учебный. Реальный поиск делается через FTS, но цель файла —
+    дать осязаемый кусок логики, который удобно править в учебных конфликтах.
     """
     query_norm = (query or "").strip().lower()
     if not query_norm:
