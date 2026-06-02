@@ -64,7 +64,7 @@
 
 ### ⭐2 — `--force-with-lease` vs `--force`
 
-Что было сделано (`git commit --amend` после push), почему обычный `git push` отказал, чем `--force-with-lease` безопаснее `--force`.
+--force-with-lease` безопаснее `--force`, не даёт случайно запароть ветку с чужими изменениями.
 
 ![Push --force-with-lease успех](screenshots/star-2-force-with-lease.png)
 
