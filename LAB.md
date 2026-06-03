@@ -76,7 +76,7 @@
 
 ### ⭐4 — безопасный выход из detached HEAD
 
-Как зашли в detached HEAD, какой коммит сделали, как выходили через `git switch -c`, чем `git reflog` помог как страховка.
+git reflog помог найти потеряный хеш коммита и отпочковать от него новую ветку 'experiment/recovered-by-reflog'.
 
 ![Выход из detached HEAD](screenshots/star-4-detached-head.png)
 
